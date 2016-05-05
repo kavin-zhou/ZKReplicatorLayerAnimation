@@ -15,6 +15,7 @@
 		5835E6C01CDB2005004ABD66 /* ZKReplicatorLayerAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5835E6BF1CDB2005004ABD66 /* ZKReplicatorLayerAnimationUITests.m */; };
 		5835E6D11CDB2072004ABD66 /* ZKMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5835E6CF1CDB2072004ABD66 /* ZKMainViewController.m */; };
 		5835E6D21CDB2072004ABD66 /* ZKMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5835E6D01CDB2072004ABD66 /* ZKMainViewController.xib */; };
+		5835E6D91CDB22D4004ABD66 /* ZKReplicatorAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5835E6D81CDB22D4004ABD66 /* ZKReplicatorAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		5835E6CE1CDB2072004ABD66 /* ZKMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKMainViewController.h; sourceTree = "<group>"; };
 		5835E6CF1CDB2072004ABD66 /* ZKMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKMainViewController.m; sourceTree = "<group>"; };
 		5835E6D01CDB2072004ABD66 /* ZKMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZKMainViewController.xib; sourceTree = "<group>"; };
+		5835E6D71CDB22D4004ABD66 /* ZKReplicatorAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKReplicatorAnimation.h; sourceTree = "<group>"; };
+		5835E6D81CDB22D4004ABD66 /* ZKReplicatorAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKReplicatorAnimation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,7 @@
 				5835E69D1CDB2005004ABD66 /* AppDelegate.h */,
 				5835E69E1CDB2005004ABD66 /* AppDelegate.m */,
 				5835E6CD1CDB204F004ABD66 /* Classes */,
+				5835E6D31CDB210E004ABD66 /* ZKReplicatorLayer */,
 				5835E6AB1CDB2005004ABD66 /* Info.plist */,
 				5835E69A1CDB2005004ABD66 /* Supporting Files */,
 			);
@@ -146,6 +150,15 @@
 				5835E6D01CDB2072004ABD66 /* ZKMainViewController.xib */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		5835E6D31CDB210E004ABD66 /* ZKReplicatorLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5835E6D71CDB22D4004ABD66 /* ZKReplicatorAnimation.h */,
+				5835E6D81CDB22D4004ABD66 /* ZKReplicatorAnimation.m */,
+			);
+			path = ZKReplicatorLayer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5835E6D91CDB22D4004ABD66 /* ZKReplicatorAnimation.m in Sources */,
 				5835E69F1CDB2005004ABD66 /* AppDelegate.m in Sources */,
 				5835E69C1CDB2005004ABD66 /* main.m in Sources */,
 				5835E6D11CDB2072004ABD66 /* ZKMainViewController.m in Sources */,
