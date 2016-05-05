@@ -10,6 +10,33 @@
 
 @implementation ZKReplicatorAnimation
 
++ (CALayer *)replicatorLayer_Circle
+{
+    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+    shapeLayer.frame = CGRectMake(0, 0, 80, 80);
+    shapeLayer.path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, 80, 80)].CGPath;
+    shapeLayer.fillColor = [UIColor redColor].CGColor;
+    shapeLayer.opacity = 0.f;
+    
+    CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
+    animationGroup.animations = @[
+                                  [ZKReplicatorAnimation alphaAnimation],
+                                  [ZKReplicatorAnimation scaleAnimationZoom]
+                                  ];
+    animationGroup.duration = 4.f;
+    animationGroup.autoreverses = NO;
+    animationGroup.repeatCount = HUGE;
+    [shapeLayer addAnimation:animationGroup forKey:@"animationGroup"];
+    
+    CAReplicatorLayer *replicatorLayer = [CAReplicatorLayer layer];
+    replicatorLayer.frame = CGRectMake(0, 0, 80, 80);
+    replicatorLayer.instanceDelay = 0.5;
+    replicatorLayer.instanceCount = 8;
+    [replicatorLayer addSublayer:shapeLayer];
+    
+    return replicatorLayer;
+}
+
 #pragma mark *** 基本动画简单封装 ***
 + (CABasicAnimation *)alphaAnimation
 {

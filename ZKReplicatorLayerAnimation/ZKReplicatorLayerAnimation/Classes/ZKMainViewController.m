@@ -7,6 +7,7 @@
 //
 
 #import "ZKMainViewController.h"
+#import "ZKReplicatorAnimation.h"
 
 @interface ZKMainViewController ()
 
@@ -14,24 +15,32 @@
 
 @implementation ZKMainViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    [self setupAnimation];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setupAnimation
+{
+    NSArray *subLayers = @[
+                           [ZKReplicatorAnimation replicatorLayer_Circle],
+                           [ZKReplicatorAnimation replicatorLayer_Wave],
+                           [ZKReplicatorAnimation replicatorLayer_Grid],
+                           [ZKReplicatorAnimation replicatorLayer_Triangle]
+                           ];
+    CGFloat radius = [UIScreen mainScreen].bounds.size.width * 0.5;
+    for (NSInteger i = 0; i < subLayers.count; i ++) {
+        NSInteger col = i % 2;
+        NSInteger row = i / 2;
+        
+        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(radius*col, radius*row, radius, radius)];
+        view.backgroundColor = [UIColor yellowColor];
+        [view.layer addSublayer:subLayers[i]];
+        
+        [self.view addSubview:view];
+    }
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
