@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5835E69C1CDB2005004ABD66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5835E69B1CDB2005004ABD66 /* main.m */; };
+		5835E69F1CDB2005004ABD66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5835E69E1CDB2005004ABD66 /* AppDelegate.m */; };
+		5835E6A71CDB2005004ABD66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5835E6A61CDB2005004ABD66 /* Assets.xcassets */; };
+		5835E6AA1CDB2005004ABD66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5835E6A81CDB2005004ABD66 /* LaunchScreen.storyboard */; };
+		5835E6B51CDB2005004ABD66 /* ZKReplicatorLayerAnimationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5835E6B41CDB2005004ABD66 /* ZKReplicatorLayerAnimationTests.m */; };
+		5835E6C01CDB2005004ABD66 /* ZKReplicatorLayerAnimationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5835E6BF1CDB2005004ABD66 /* ZKReplicatorLayerAnimationUITests.m */; };
+		5835E6D11CDB2072004ABD66 /* ZKMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5835E6CF1CDB2072004ABD66 /* ZKMainViewController.m */; };
+		5835E6D21CDB2072004ABD66 /* ZKMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5835E6D01CDB2072004ABD66 /* ZKMainViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5835E6B11CDB2005004ABD66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5835E68F1CDB2005004ABD66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5835E6961CDB2005004ABD66;
+			remoteInfo = ZKReplicatorLayerAnimation;
+		};
+		5835E6BC1CDB2005004ABD66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5835E68F1CDB2005004ABD66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5835E6961CDB2005004ABD66;
+			remoteInfo = ZKReplicatorLayerAnimation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5835E6971CDB2005004ABD66 /* ZKReplicatorLayerAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZKReplicatorLayerAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5835E69B1CDB2005004ABD66 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5835E69D1CDB2005004ABD66 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5835E69E1CDB2005004ABD66 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5835E6A61CDB2005004ABD66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5835E6A91CDB2005004ABD66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5835E6AB1CDB2005004ABD66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5835E6B01CDB2005004ABD66 /* ZKReplicatorLayerAnimationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZKReplicatorLayerAnimationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5835E6B41CDB2005004ABD66 /* ZKReplicatorLayerAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKReplicatorLayerAnimationTests.m; sourceTree = "<group>"; };
+		5835E6B61CDB2005004ABD66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5835E6BB1CDB2005004ABD66 /* ZKReplicatorLayerAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZKReplicatorLayerAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5835E6BF1CDB2005004ABD66 /* ZKReplicatorLayerAnimationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZKReplicatorLayerAnimationUITests.m; sourceTree = "<group>"; };
+		5835E6C11CDB2005004ABD66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5835E6CE1CDB2072004ABD66 /* ZKMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZKMainViewController.h; sourceTree = "<group>"; };
+		5835E6CF1CDB2072004ABD66 /* ZKMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZKMainViewController.m; sourceTree = "<group>"; };
+		5835E6D01CDB2072004ABD66 /* ZKMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZKMainViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5835E6941CDB2005004ABD66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5835E6AD1CDB2005004ABD66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5835E6B81CDB2005004ABD66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5835E68E1CDB2005004ABD66 = {
+			isa = PBXGroup;
+			children = (
+				5835E6991CDB2005004ABD66 /* ZKReplicatorLayerAnimation */,
+				5835E6B31CDB2005004ABD66 /* ZKReplicatorLayerAnimationTests */,
+				5835E6BE1CDB2005004ABD66 /* ZKReplicatorLayerAnimationUITests */,
+				5835E6981CDB2005004ABD66 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5835E6981CDB2005004ABD66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5835E6971CDB2005004ABD66 /* ZKReplicatorLayerAnimation.app */,
+				5835E6B01CDB2005004ABD66 /* ZKReplicatorLayerAnimationTests.xctest */,
+				5835E6BB1CDB2005004ABD66 /* ZKReplicatorLayerAnimationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5835E6991CDB2005004ABD66 /* ZKReplicatorLayerAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				5835E69D1CDB2005004ABD66 /* AppDelegate.h */,
+				5835E69E1CDB2005004ABD66 /* AppDelegate.m */,
+				5835E6CD1CDB204F004ABD66 /* Classes */,
+				5835E6AB1CDB2005004ABD66 /* Info.plist */,
+				5835E69A1CDB2005004ABD66 /* Supporting Files */,
+			);
+			path = ZKReplicatorLayerAnimation;
+			sourceTree = "<group>";
+		};
+		5835E69A1CDB2005004ABD66 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5835E6A61CDB2005004ABD66 /* Assets.xcassets */,
+				5835E6A81CDB2005004ABD66 /* LaunchScreen.storyboard */,
+				5835E69B1CDB2005004ABD66 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5835E6B31CDB2005004ABD66 /* ZKReplicatorLayerAnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				5835E6B41CDB2005004ABD66 /* ZKReplicatorLayerAnimationTests.m */,
+				5835E6B61CDB2005004ABD66 /* Info.plist */,
+			);
+			path = ZKReplicatorLayerAnimationTests;
+			sourceTree = "<group>";
+		};
+		5835E6BE1CDB2005004ABD66 /* ZKReplicatorLayerAnimationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5835E6BF1CDB2005004ABD66 /* ZKReplicatorLayerAnimationUITests.m */,
+				5835E6C11CDB2005004ABD66 /* Info.plist */,
+			);
+			path = ZKReplicatorLayerAnimationUITests;
+			sourceTree = "<group>";
+		};
+		5835E6CD1CDB204F004ABD66 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5835E6CE1CDB2072004ABD66 /* ZKMainViewController.h */,
+				5835E6CF1CDB2072004ABD66 /* ZKMainViewController.m */,
+				5835E6D01CDB2072004ABD66 /* ZKMainViewController.xib */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5835E6961CDB2005004ABD66 /* ZKReplicatorLayerAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5835E6C41CDB2005004ABD66 /* Build configuration list for PBXNativeTarget "ZKReplicatorLayerAnimation" */;
+			buildPhases = (
+				5835E6931CDB2005004ABD66 /* Sources */,
+				5835E6941CDB2005004ABD66 /* Frameworks */,
+				5835E6951CDB2005004ABD66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZKReplicatorLayerAnimation;
+			productName = ZKReplicatorLayerAnimation;
+			productReference = 5835E6971CDB2005004ABD66 /* ZKReplicatorLayerAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5835E6AF1CDB2005004ABD66 /* ZKReplicatorLayerAnimationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5835E6C71CDB2005004ABD66 /* Build configuration list for PBXNativeTarget "ZKReplicatorLayerAnimationTests" */;
+			buildPhases = (
+				5835E6AC1CDB2005004ABD66 /* Sources */,
+				5835E6AD1CDB2005004ABD66 /* Frameworks */,
+				5835E6AE1CDB2005004ABD66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5835E6B21CDB2005004ABD66 /* PBXTargetDependency */,
+			);
+			name = ZKReplicatorLayerAnimationTests;
+			productName = ZKReplicatorLayerAnimationTests;
+			productReference = 5835E6B01CDB2005004ABD66 /* ZKReplicatorLayerAnimationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5835E6BA1CDB2005004ABD66 /* ZKReplicatorLayerAnimationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5835E6CA1CDB2005004ABD66 /* Build configuration list for PBXNativeTarget "ZKReplicatorLayerAnimationUITests" */;
+			buildPhases = (
+				5835E6B71CDB2005004ABD66 /* Sources */,
+				5835E6B81CDB2005004ABD66 /* Frameworks */,
+				5835E6B91CDB2005004ABD66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5835E6BD1CDB2005004ABD66 /* PBXTargetDependency */,
+			);
+			name = ZKReplicatorLayerAnimationUITests;
+			productName = ZKReplicatorLayerAnimationUITests;
+			productReference = 5835E6BB1CDB2005004ABD66 /* ZKReplicatorLayerAnimationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5835E68F1CDB2005004ABD66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = ZK;
+				TargetAttributes = {
+					5835E6961CDB2005004ABD66 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					5835E6AF1CDB2005004ABD66 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 5835E6961CDB2005004ABD66;
+					};
+					5835E6BA1CDB2005004ABD66 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 5835E6961CDB2005004ABD66;
+					};
+				};
+			};
+			buildConfigurationList = 5835E6921CDB2005004ABD66 /* Build configuration list for PBXProject "ZKReplicatorLayerAnimation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5835E68E1CDB2005004ABD66;
+			productRefGroup = 5835E6981CDB2005004ABD66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5835E6961CDB2005004ABD66 /* ZKReplicatorLayerAnimation */,
+				5835E6AF1CDB2005004ABD66 /* ZKReplicatorLayerAnimationTests */,
+				5835E6BA1CDB2005004ABD66 /* ZKReplicatorLayerAnimationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5835E6951CDB2005004ABD66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5835E6AA1CDB2005004ABD66 /* LaunchScreen.storyboard in Resources */,
+				5835E6A71CDB2005004ABD66 /* Assets.xcassets in Resources */,
+				5835E6D21CDB2072004ABD66 /* ZKMainViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5835E6AE1CDB2005004ABD66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5835E6B91CDB2005004ABD66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5835E6931CDB2005004ABD66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5835E69F1CDB2005004ABD66 /* AppDelegate.m in Sources */,
+				5835E69C1CDB2005004ABD66 /* main.m in Sources */,
+				5835E6D11CDB2072004ABD66 /* ZKMainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5835E6AC1CDB2005004ABD66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5835E6B51CDB2005004ABD66 /* ZKReplicatorLayerAnimationTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5835E6B71CDB2005004ABD66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5835E6C01CDB2005004ABD66 /* ZKReplicatorLayerAnimationUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5835E6B21CDB2005004ABD66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5835E6961CDB2005004ABD66 /* ZKReplicatorLayerAnimation */;
+			targetProxy = 5835E6B11CDB2005004ABD66 /* PBXContainerItemProxy */;
+		};
+		5835E6BD1CDB2005004ABD66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5835E6961CDB2005004ABD66 /* ZKReplicatorLayerAnimation */;
+			targetProxy = 5835E6BC1CDB2005004ABD66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5835E6A81CDB2005004ABD66 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5835E6A91CDB2005004ABD66 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5835E6C21CDB2005004ABD66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5835E6C31CDB2005004ABD66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5835E6C51CDB2005004ABD66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZKReplicatorLayerAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hoolai.ZKReplicatorLayerAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5835E6C61CDB2005004ABD66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZKReplicatorLayerAnimation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hoolai.ZKReplicatorLayerAnimation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5835E6C81CDB2005004ABD66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZKReplicatorLayerAnimationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hoolai.ZKReplicatorLayerAnimationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZKReplicatorLayerAnimation.app/ZKReplicatorLayerAnimation";
+			};
+			name = Debug;
+		};
+		5835E6C91CDB2005004ABD66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZKReplicatorLayerAnimationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hoolai.ZKReplicatorLayerAnimationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZKReplicatorLayerAnimation.app/ZKReplicatorLayerAnimation";
+			};
+			name = Release;
+		};
+		5835E6CB1CDB2005004ABD66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZKReplicatorLayerAnimationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hoolai.ZKReplicatorLayerAnimationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZKReplicatorLayerAnimation;
+			};
+			name = Debug;
+		};
+		5835E6CC1CDB2005004ABD66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZKReplicatorLayerAnimationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = hoolai.ZKReplicatorLayerAnimationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZKReplicatorLayerAnimation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5835E6921CDB2005004ABD66 /* Build configuration list for PBXProject "ZKReplicatorLayerAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5835E6C21CDB2005004ABD66 /* Debug */,
+				5835E6C31CDB2005004ABD66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5835E6C41CDB2005004ABD66 /* Build configuration list for PBXNativeTarget "ZKReplicatorLayerAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5835E6C51CDB2005004ABD66 /* Debug */,
+				5835E6C61CDB2005004ABD66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5835E6C71CDB2005004ABD66 /* Build configuration list for PBXNativeTarget "ZKReplicatorLayerAnimationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5835E6C81CDB2005004ABD66 /* Debug */,
+				5835E6C91CDB2005004ABD66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5835E6CA1CDB2005004ABD66 /* Build configuration list for PBXNativeTarget "ZKReplicatorLayerAnimationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5835E6CB1CDB2005004ABD66 /* Debug */,
+				5835E6CC1CDB2005004ABD66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5835E68F1CDB2005004ABD66 /* Project object */;
+}
