@@ -37,6 +37,84 @@
     return replicatorLayer;
 }
 
++ (CALayer *)replicatorLayer_Wave
+{
+    CGFloat between = 5.f;
+    CGFloat radius = (100-2*between)/3;
+    
+    CAShapeLayer *shapeLayer = [CAShapeLayer layer];
+    shapeLayer.frame = CGRectMake(0, (100-2*radius)*0.5, radius, radius);
+    shapeLayer.path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, radius, radius)].CGPath;
+    shapeLayer.fillColor = [UIColor greenColor].CGColor;
+    [shapeLayer addAnimation:[ZKReplicatorAnimation scaleAnimationShrink] forKey:@"scaleAnimation"];
+    
+    CAReplicatorLayer *replicatorLayer = [CAReplicatorLayer layer];
+    replicatorLayer.frame = CGRectMake(0, 0, 100, 100);
+    replicatorLayer.instanceDelay = 0.2;
+    replicatorLayer.instanceCount = 3;
+    replicatorLayer.instanceTransform = CATransform3DMakeTranslation(between*2+radius, 0, 0);
+    [replicatorLayer addSublayer:shapeLayer];
+    return replicatorLayer;
+}
+
++ (CALayer *)replicatorLayer_Triangle{
+    CGFloat radius = 100/4;
+    CGFloat transX = 100 - radius;
+    CAShapeLayer *shape = [CAShapeLayer layer];
+    shape.frame = CGRectMake(0, 0, radius, radius);
+    shape.path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, radius, radius)].CGPath;
+    shape.strokeColor = [UIColor redColor].CGColor;
+    shape.fillColor = [UIColor redColor].CGColor;
+    shape.lineWidth = 1;
+    [shape addAnimation:[ZKReplicatorAnimation rotationAnimation:transX] forKey:@"rotateAnimation"];
+    
+    CAReplicatorLayer *replicatorLayer = [CAReplicatorLayer layer];
+    replicatorLayer.frame = CGRectMake(0, 0, radius, radius);
+    replicatorLayer.instanceDelay = 0.0;
+    replicatorLayer.instanceCount = 3;
+    CATransform3D trans3D = CATransform3DIdentity;
+    trans3D = CATransform3DTranslate(trans3D, transX, 0, 0);
+    trans3D = CATransform3DRotate(trans3D, 120.0*M_PI/180.0, 0.0, 0.0, 1.0);
+    replicatorLayer.instanceTransform = trans3D;
+    [replicatorLayer addSublayer:shape];
+    
+    return replicatorLayer;
+}
+
++ (CALayer *)replicatorLayer_Grid{
+    NSInteger column = 3;
+    CGFloat between = 5.0;
+    CGFloat radius = (100 - between * (column - 1))/column;
+    CAShapeLayer *shape = [CAShapeLayer layer];
+    shape.frame = CGRectMake(0, 0, radius, radius);
+    shape.path = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(0, 0, radius, radius)].CGPath;
+    shape.fillColor = [UIColor redColor].CGColor;
+    
+    CAAnimationGroup *animationGroup = [CAAnimationGroup animation];
+    animationGroup.animations = @[ [ZKReplicatorAnimation scaleAnimationShrink],
+                                   [ZKReplicatorAnimation alphaAnimation]];
+    animationGroup.duration = 1.0;
+    animationGroup.autoreverses = YES;
+    animationGroup.repeatCount = HUGE;
+    [shape addAnimation:animationGroup forKey:@"groupAnimation"];
+    
+    CAReplicatorLayer *replicatorLayerX = [CAReplicatorLayer layer];
+    replicatorLayerX.frame = CGRectMake(0, 0, 100, 100);
+    replicatorLayerX.instanceDelay = 0.3;
+    replicatorLayerX.instanceCount = column;
+    replicatorLayerX.instanceTransform = CATransform3DTranslate(CATransform3DIdentity, radius+between, 0, 0);
+    [replicatorLayerX addSublayer:shape];
+    
+    CAReplicatorLayer *replicatorLayerY = [CAReplicatorLayer layer];
+    replicatorLayerY.frame = CGRectMake(0, 0, 100, 100);
+    replicatorLayerY.instanceDelay = 0.3;
+    replicatorLayerY.instanceCount = column;
+    replicatorLayerY.instanceTransform = CATransform3DTranslate(CATransform3DIdentity, 0, radius+between, 0);
+    [replicatorLayerY addSublayer:replicatorLayerX];
+    
+    return replicatorLayerY;
+}
+
 #pragma mark *** 基本动画简单封装 ***
 + (CABasicAnimation *)alphaAnimation
 {
@@ -75,19 +153,19 @@
 
 + (CABasicAnimation *)rotationAnimation:(CGFloat)transX
 {
-    CABasicAnimation *transformAnimation = [CABasicAnimation animationWithKeyPath:@"transform"];
-    CATransform3D fromValue = CATransform3DRotate(CATransform3DIdentity, 0.f, 0.f, 0.f, 0.f);
-    CATransform3D toValue = CATransform3DRotate(CATransform3DIdentity, 0.f, 0.f, 0.f, 0.f);
-    transformAnimation.fromValue = [NSValue valueWithCATransform3D:fromValue];
-    transformAnimation.toValue = [NSValue valueWithCATransform3D:toValue];
+    CABasicAnimation *scale = [CABasicAnimation animationWithKeyPath:@"transform"];
+    CATransform3D fromValue = CATransform3DRotate(CATransform3DIdentity, 0.0, 0.0, 0.0, 0.0);
+    scale.fromValue = [NSValue valueWithCATransform3D:fromValue];
     
-    transformAnimation.autoreverses = YES;
-    transformAnimation.repeatCount = MAXFLOAT;
-    transformAnimation.duration = 0.8;
-
-    transformAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    CATransform3D toValue = CATransform3DTranslate(CATransform3DIdentity, transX, 0.0, 0.0);
+    toValue = CATransform3DRotate(toValue,120.0*M_PI/180.0, 0.0, 0.0, 1.0);
     
-    return transformAnimation;
+    scale.toValue = [NSValue valueWithCATransform3D:toValue];
+    scale.autoreverses = NO;
+    scale.repeatCount = HUGE;
+    scale.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    scale.duration = 0.8;
+    return scale;
 }
 
 @end

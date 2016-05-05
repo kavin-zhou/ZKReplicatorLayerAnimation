@@ -35,7 +35,7 @@
         NSInteger col = i % 2;
         NSInteger row = i / 2;
         
-        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(radius*col, radius*row, radius, radius)];
+        UIView *view = [[UIView alloc] initWithFrame:CGRectMake(radius*col, radius*row+100, radius, radius)];
         view.backgroundColor = [UIColor yellowColor];
         [view.layer addSublayer:subLayers[i]];
         
